@@ -1,0 +1,105 @@
+﻿@model CopyVisterma.Entities.Client
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Client</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.City)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.City)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PostalCode)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PostalCode)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.NIP)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.NIP)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.REGON)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.REGON)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Phone)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Phone)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Email)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Type)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Type.Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Street)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Street)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.BuildingNumber)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.BuildingNumber)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.ApartmentNumber)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.ApartmentNumber)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PersonGuardian)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PersonGuardian.Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PersonWater)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PersonWater.Id)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.PersonHeating)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.PersonHeating.Id)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="Id" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>
